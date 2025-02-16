@@ -9,6 +9,7 @@ RUN groupadd --gid 1000 appgroup && \
 ENV POETRY_HOME="/opt/poetry"
 ENV PATH="$POETRY_HOME/bin:$PATH"
 ENV POETRY_VIRTUALENVS_CREATE=false
+ENV PYTHONPATH=/packages/backend:$PYTHONPATH
 
 RUN apt-get update && apt-get upgrade -y && \
     apt-get install -y rclone curl gosu && \

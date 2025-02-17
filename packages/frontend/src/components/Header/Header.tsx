@@ -2,7 +2,7 @@ import { FC } from 'react';
 
 export const Header: FC = () => {
   return (
-    <div>
+    <div className="bg-slate-200">
       <h1>DAPS UI</h1>
     </div>
   );

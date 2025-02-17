@@ -6,7 +6,7 @@ import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 
 export function Root() {
   return (
-    <div className="w-screen">
+    <div className="w-screen h-screen bg-slate-700">
       <Header />
       <Nav />
       <Outlet />
